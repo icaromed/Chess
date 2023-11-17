@@ -18,11 +18,14 @@ public class Piece {
         return column;
     }
 
-    public boolean move(int row, int column){
+    public void move(int row, int column){
         // moves the piece to the given position
         this.row = row;
         this.column = column;
-        return true;
+    }
+
+    public boolean isValidMove(int row, int column){
+        return false;
     }
 
 }
